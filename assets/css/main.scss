@@ -1,0 +1,79 @@
+html {
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+
+// グーテンベルグ用CSSの追加
+.ohmorilab__breadcrumbs ol li {
+    display: inline;
+}
+
+.ohmorilab__breadcrumbs ol li+li::before {
+    content: ">";
+    margin: 0 12px;
+}
+
+.ohmorilab__page h1 {
+    margin-top: 0.5em;
+    font-size: 2.75em;
+    font-weight: bold;
+    color: #045038;
+}
+
+.ohmorilab__page h2 {
+    margin: 0.75em 0 0.25em 0;
+    font-size: 2em;
+    font-weight: bold;
+    color: #0abf7a;
+}
+
+.ohmorilab__page h3 {
+    font-size: 1.75em;
+    font-weight: bold
+}
+
+.ohmorilab__page h4 {
+    font-size: 1.75em;
+}
+
+.ohmorilab__page h5 {
+    font-size: 1.5em;
+}
+
+.ohmorilab__page h6 {
+    font-size: 1.25em;
+}
+
+
+
+// WordPressの初期のグーテンベルクCSSの上書き
+.ohmorilab__page code {
+    background-color: #f0f0f0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.ohmorilab__page .wp-block-pullquote {
+    font-size: 1em;
+}
+
+.ohmorilab__page ul,
+.ohmorilab__page ol {
+    border-top: solid #1e366a 1px;
+    border-bottom: solid #1e366a 1px;
+    padding: 0 0.5em
+}
+
+.ohmorilab__page ul li,
+.ohmorilab__page ol li {
+    list-style: inside;
+    line-height: 1.5;
+    padding: 0.3em 1em;
+}
+
+.ohmorilab__page p {
+    margin-bottom: 1em;
+}
