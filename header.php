@@ -76,28 +76,39 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class='flex items-center gap-5 relative h-[70px]'>
             <div class='flex justify-between items-center mx-4'>
                 <h1 class="ohmorilab__site-title text-[24px] font-bold"><a href=<?= esc_url( home_url() );?>
-                        class='px-4'><?php bloginfo( 'name' ); ?></a></h1>
-                <?php wp_nav_menu( array(
-                'menu'  => 'main', 
-                'theme_location' => 'header-menu', 
-                'menu_class' => 'text-white items-center lg:!flex lg:space-x-5 max-lg:space-y-2 max-lg:hidden max-lg:py-4 max-lg:w-full px-6',
-                'walker'  => new Custom_Walker_Main_Menu 
-            )); ?>
+                        class='px-4'><?php bloginfo( 'name' ); ?></a>
+                </h1>
+                <?php 
+                    wp_nav_menu( array(
+                    'menu'  => 'main', 
+                    'theme_location' => 'header-menu', 
+                    'menu_class' => 'text-white items-center lg:!flex lg:space-x-5 max-lg:space-y-2 max-lg:hidden max-lg:py-4 max-lg:w-full px-6',
+                    'walker'  => new Custom_Walker_Main_Menu 
+                    )); 
+                ?>
             </div>
             <nav id="navi">
-                <ul class="nav-menu">
+                <!-- <ul class="nav-menu">
                     <li><a href="#">ホーム</a></li>
                     <li><a href="#">活動</a></li>
                     <li><a href="#">研究内容</a></li>
                     <li><a href="#">研究業績</a></li>
                     <li><a href="#">お知らせ</a></li>
                     <li><a href="#">お問い合わせ</a></li>
-                </ul>
-                <ul class="nav-sns">
+                </ul> -->
+                <?php 
+                    wp_nav_menu( array(
+                    'menu'  => 'main', 
+                    'theme_location' => 'header-menu', 
+                    'menu_class' => 'nav-menu',
+                    'walker'  => new Custom_Walker_Main_Menu 
+                    )); 
+                ?>
+                <!-- <ul class="nav-sns">
                     <li><a href="#" target="_blank">Twitter</a></li>
                     <li><a href="#" target="_blank">facebook</a></li>
                     <li><a href="#" target="_blank">instagram</a></li>
-                </ul>
+                </ul> -->
             </nav>
             <div class="toggle_btn lg:hidden">
                 <span></span>
