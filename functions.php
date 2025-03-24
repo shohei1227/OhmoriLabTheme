@@ -31,9 +31,10 @@ function add_link_files() {
     // JavaScriptの読み込み
     // get_template_dictionary_uri()とget_theme_file_uri()のどっちがいいか後で調べる
     // dateをつけることで自動でキャッシュ削除されるように
-    wp_enqueue_script( 'test', get_template_directory_uri().'/assets/js/test.js?'. date('YmdHis', filemtime(get_template_directory() . '/assets/js/test.js')), array(), '1.0', true);
-    wp_enqueue_script( 'header', get_template_directory_uri().'/assets/js/header.js?'. date('YmdHis', filemtime(get_template_directory() . '/assets/js/header.js')), array(), '1.0', true);
-    wp_enqueue_script( 'front-page-js', get_template_directory_uri().'/assets/js/front-page.js?'. date('YmdHis', filemtime(get_template_directory() . '/assets/js/front-page.js')), array(), '1.0', true);
+    wp_enqueue_script( 'main', get_template_directory_uri().'/js/main.js?'. date('YmdHis', filemtime(get_template_directory() . '/js/main.js')), array(), '1.0', true);
+    // wp_enqueue_script( 'test', get_template_directory_uri().'/assets/js/test.js?'. date('YmdHis', filemtime(get_template_directory() . '/assets/js/test.js')), array(), '1.0', true);
+    // wp_enqueue_script( 'header', get_template_directory_uri().'/assets/js/header.js?'. date('YmdHis', filemtime(get_template_directory() . '/assets/js/header.js')), array(), '1.0', true);
+    // wp_enqueue_script( 'front-page-js', get_template_directory_uri().'/assets/js/front-page.js?'. date('YmdHis', filemtime(get_template_directory() . '/assets/js/front-page.js')), array(), '1.0', true);
 }
 add_action( 'wp_enqueue_scripts', 'add_link_files' );
 

@@ -4,125 +4,171 @@
  *
  * @package Ohmori-Lab Theme
  */
-get_header();
+ get_header();
 ?>
 
-<body>
-    <main>
-        <!-- Header セクション トップページ上部の画像など -->
-        <section class="ohmorilab__header">
-            <div class="ohmorilab__description">
-                <h2 class="ohmorilab__description-title">大森研究室</h2>
-                <h3>革新的なオペレーションで<br>未来を切り拓く</h3>
+
+ <!-- <!DOCTYPE html> -->
+
+<!-- <html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>大森研究室｜早稲田大学　創造理工学部　経営システム工学科</title>
+        <meta name="description" content="早稲田大学　創造理工学部　経営システム工学科　大森研究室のオフィシャルサイトです．当研究室では，IE(Industrial Engineering)やOR(Operations Research)をベースとしたロジスティクス、サプライチェーンマネジメント、サービスのオペレーションの研究を行っています．また，企業との産学連携プロジェクトや海外大学との共同研究・国際プロジェクトにも多数参画しています．">
+        <meta name="keywords" content="早稲田大学,創造理工学部,経営システム工学科,大森研究室,ロジスティクス,サプライチェーンマネジメント,サービスオペレーション">
+        <meta property="og:locale" content="ja_JP">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="大森研究室｜早稲田大学　創造理工学部　経営システム工学科">
+        <meta property="og:description" content="早稲田大学　創造理工学部　経営システム工学科　大森研究室のオフィシャルサイトです．当研究室では，IE(Industrial Engineering)やOR(Operations Research)をベースとしたロジスティクス、サプライチェーンマネジメント、サービスのオペレーションの研究を行っています．また，企業との産学連携プロジェクトや海外大学との共同研究・国際プロジェクトにも多数参画しています．">
+        <meta property="og:site_name" content="大森研究室｜早稲田大学　創造理工学部　経営システム工学科">
+        <meta name="viewport" content="width=device-width" initial-scale="1">
+        <link rel="icon" href="">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <script src="js/main.js"></script>
+    </head> -->
+    <!-- <body>
+        <header id="header">
+            <h1 class="site-title">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/topvisual.jpg" alt="">
+            </h1>
+            <nav id="navi">
+                <ul class="nav-menu">
+                    <li><a href="<?php echo home_url(); ?>">ホーム</a></li>
+                    <li><a href="<?php echo home_url(); ?>/research">研究内容</a></li>
+                    <li><a href="/publication">研究業績</a></li>
+                    <li><a href="news.html">お知らせ</a></li>
+                    <li><a href="/contact">お問い合わせ</a></li>
+                </ul>
+                <ul class="nav-sns">
+                    <li><a href="#" target="_blank">Twitter</a></li>
+                    <li><a href="#" target="_blank">facebook</a></li>
+                    <li><a href="#" target="_blank">instagram</a></li>
+                </ul>
+            </nav>
+            <div class="toggle_btn">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </section>
-        <!-- About セクション  研究室の説明(大森先生、研究内容、メンバー)-->
-        <section class="ohmorilab__about">
-            <div class="about-img fixed-bg">
-                <h2 class="sec-title">About Ohmori Lab</h2>
-            </div>
-            <div class="about-content">
-                <h3 class="content-title">教員紹介</h3>
-                <div class="about-professor">
-                    <img class="ohmori-professor-img"
-                        src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ohmori.jpeg" alt="大森峻一准教授">
-                    <div class="ohmori-professor-text">
-                        <h3>大森峻一</h3>
-                        <p>経営システム工学科・准教授</p>
-                        <p>グローバル生産・物流コラボレート研究所・所長</p>
-                        <p>価値創造研究所・研究員</p>
-                        <p>データサイエンス研究所・研究員</p>
+            <div id="mask"></div>
+        </header> -->
+        <h1 class="site-title" id="id_topvisual">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/topvisual.jpg" alt="">
+        </h1>
+        <main>
+            <section id="about">
+                <div class="about-img fixed-bg">
+                    <h2 class="sec-title">大森研究室</h2>
+                    <h3 class="sec-subtitle">Ohmori lab.</h3>
+                </div>
+
+                <div class="about-content wrapper">
+                    <h3 class="item-title">大森峻一</h3>
+                    <div class="content">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about4.jpg" alt="テキスト">
+                        <div class="text">
+                          <p>
+                            IE(Industrial Engineering)やOR(Operations Research)をベースとしたロジスティクス、サプライチェーンマネジメント、サービスのオペレーションの研究に従事。企業との産学連携プロジェクトにも多数参画。海外の大学との共同研究・国際プロジェクト運営にも多数参画。早稲田大学理工学部経営システム工学科卒(’07)、同修士(’09)、博士課程修了、博士(工学)(’13：早稲田大学)
+                          </p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <h3 class="item-title">研究内容</h3>
+                        <ul>
+                            <li>
+                               <p>経営工学</p>
+                                <p>オペレーションズリサーチ</p>
+                                <p>最適化</p>
+                            </li>
+                            <li>
+                                <p>施設計画</p>
+                                <p>ロジスティクス</p>
+                                <p>サプライチェーンマネジメント</p>
+                            </li>
+                        </ul>
+                        <a class="btn" href="research.html"><span>Read More</span></a>
+                    </div>
+                    <div class="member">
+                        <h3 class="item-title">メンバー</h3>
+                        <ul>
+                            <li>
+                                <span class="grade">M2</span>
+                                <p></p>
+                            </li>
+                            <li>
+                                <span class="grade">M1</span>
+                                <p>阿部悠吾</p>
+                                <p>天谷太亮</p>
+                                <p>網倉晃太郎</p>
+                                <p>近江柚乃</p>
+                                <p>大島実奈人</p>
+                                <p>黒崎心絃美</p>
+                                <p>渡邊友樹</p>
+                            </li>
+                            <li>
+                                <span class="grade">B4</span>
+                                <p>川瀬猛士</p>
+                                <p>桑田大輝</p>
+                                <p>菅原理名</p>
+                                <p>鈴木滉次郎</p>
+                                <p>永井克樹</p>
+                                <p>野口翔平</p>
+                                <p>牧野悠</p>
+                                <p>三塩航平</p>
+                                <p>満岡勇紀</p>
+                                <p>森田大貴</p>
+                            </li><li>
+                                <span class="grade">B3</span>
+                                <p>荒木裕冴</p>
+                                <p>榎本綾菜</p>
+                                <p>大倉穰</p>
+                                <p>キム・ジュンファン</p>
+                                <p>高岡春</p>
+                                <p>豊田俊瑞</p>
+                                <p>三村珠貴丸</p>
+                                <p>山口結子</p>
+                                <p>吉田莉乃</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <h3 class="content-title">研究分野</h3>
-                <div class="about-research">
-                    <ul>
-                        <li>サプライチェーンネットワーク設計</li>
-                        <li>多段階在庫最適化</li>
-                        <li>施設レイアウト設計</li>
-                        <li>配送計画</li>
-                        <li>スケジューリング</li>
-                        <li>需要予測</li>
-                        <li>ロバスト最適化</li>
-                        <li>データ・ドリブン最適化</li>
-                    </ul>
-                    <div class="btn">
-                        <a class="readmore-btn" href="#"><span><?php _e("Read More", "test-ja")?></span></a>
+            </section>
+            <section id="news">
+                <div class="news-img fixed-bg">
+                    <h2 class="sec-title">News</h2>
+                </div>
+                <div class="news-content wrapper">
+                    <dl>
+                        <dt>2025.03.26</dt>
+                        <dd>2025年度卒業生の論文を公開しました</dd>
+                        <dt>2025.02.03</dt>
+                        <dd>サプライチェーンレジリエンスに関する対談記事が公開されました</dd>
+                        <dt>2025.01.17</dt>
+                        <dd>大森教授の取材記事が掲載されました</dd>
+                    </dl>
+                    <a class="btn" href="news.html"><span>Read More</span></a>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="foot-wrapper">
+                <div class="flex">
+                    <div class="logo">
+                        <img src="">
                     </div>
-                </div>
-                <h3 class="content-title">メンバー</h3>
-                <div class="about-member">
-                    <ul>
-                        <li>
-                            <span class="about-member__grade">M2</span>
-                            <p>該当なし</p>
-                        </li>
-                        <li>
-                            <span class="about-member__grade">M1</span>
-                            <p>XXX</p>
-                        </li>
-                        <li>
-                            <span class="about-member__grade">B4</span>
-                            <p>野口 翔平</p>
-                            <p>XXX</p>
-                            <p>XXX</p>
-                            <p>XXX</p>
-                        </li>
-                        <li>
-                            <span class="about-member__grade">B3</span>
-                            <p>該当なし</p>
-                        </li>
-                    </ul>
-                    <p class="about-member_description">2024年7月1日現在</p>
-                </div>
-            </div>
-        </section>
-        <!-- News セクション  研究室に関するニュース-->
-        <section class="ohmorilab__news">
-            <div class="news-img fixed-bg">
-                <h2 class="sec-title">News</h2>
-            </div>
-            <?php
-                // Fetch latest news
-                $args = array(
-                    'post_type'      => 'news',
-                    'posts_per_page' => 6,
-                );
-                $news_query = new WP_Query($args);
-                if ($news_query->have_posts()) :
-                    echo '<div class="news-table wrapper divide-y divide-slate-400 border-y border-slate-400">';
-                    while ($news_query->have_posts()) : $news_query->the_post(); 
-            ?>
-            <div class="hover:bg-primary-200 ">
-                <a href="<?php the_permalink()?>">
-                    <div class="flex flex-wrap items-center px-2 py-8">
-                        <p class="text-base px-2 lg:w-1/5"><?php echo get_the_date(); ?></p>
-                        <?php 
-                            $news_categories = get_the_terms(get_the_ID(), 'news-category');
-                            if ($news_categories && !is_wp_error($news_categories)) : ?>
-                        <p class="text-sm px-2 text-gray-600 w-1/2 lg:w-1/5">
-                            <?php foreach ($news_categories as $news_category) : ?>
-                            <?php echo esc_html($news_category->name); ?>
-                            <?php if (next($news_categories)) echo ', '; ?>
-                            <?php endforeach; ?>
+                    <div class="info">
+                        <p>
+                            早稲田大学 創造理工学部 経営システム工学科（西早稲田キャンパス）<br>
+                            〒169-8555 東京都新宿区大久保3-4-1 51号館15階
                         </p>
-                        <?php endif; ?>
-                        <h3 class="text-2xl px-4 font-semibold w-full text-center lg:w-3/5"><?php the_title(); ?></h3>
                     </div>
-                </a>
+                </div>
+                <p class="copyright">Copyright &copy; Waseda University, Ohmori Lab, 2024</p>
             </div>
-            <?php 
-                endwhile;
-                echo '</div>';
-                wp_reset_postdata();
-                else :
-                    echo '<p class="text-center">No news found.</p>';
-                endif;
-            ?>
-            <div class="btn">
-                <a class="readmore-btn" href="#"><span>Read More</span></a>
-            </div>
-        </section>
-    </main>
-    <?php get_footer(); ?>
-</body>
+        </footer>
+    </body>
+<!-- </html> -->
