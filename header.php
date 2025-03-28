@@ -34,11 +34,11 @@
                 <li><a href="<?php echo home_url(); ?>/news">お知らせ</a></li>
                 <li><a href="<?php echo home_url(); ?>/contact">お問い合わせ</a></li>
             </ul>
-            <ul class="nav-sns">
-                <li><a href="#" target="_blank">Twitter</a></li>
-                <li><a href="#" target="_blank">facebook</a></li>
-                <li><a href="#" target="_blank">instagram</a></li>
-            </ul>
+            <!-- <ul class="nav-sns">
+                <li><a href="#" target="_blank">Twitter(準備中)</a></li>
+                <li><a href="#" target="_blank">facebook(準備中)</a></li>
+                <li><a href="#" target="_blank">instagram(準備中)</a></li>
+            </ul> -->
         </nav>
         <div class="toggle_btn">
             <span></span>
