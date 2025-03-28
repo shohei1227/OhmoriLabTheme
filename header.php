@@ -31,7 +31,7 @@
                 <li><a href="<?php echo home_url(); ?>">ホーム</a></li>
                 <li><a href="<?php echo home_url(); ?>/research">研究内容</a></li>
                 <li><a href="<?php echo home_url(); ?>/publication">研究業績</a></li>
-                <li><a href="news.html">お知らせ</a></li>
+                <li><a href="<?php echo home_url(); ?>/news">お知らせ</a></li>
                 <li><a href="<?php echo home_url(); ?>/contact">お問い合わせ</a></li>
             </ul>
             <ul class="nav-sns">

@@ -142,15 +142,38 @@
                     <h2 class="sec-title">News</h2>
                 </div>
                 <div class="news-content wrapper">
-                    <dl>
+                    <!-- <dl>
                         <dt>2025.03.26</dt>
                         <dd>2025年度卒業生の論文を公開しました</dd>
                         <dt>2025.02.03</dt>
                         <dd>サプライチェーンレジリエンスに関する対談記事が公開されました</dd>
                         <dt>2025.01.17</dt>
                         <dd>大森教授の取材記事が掲載されました</dd>
-                    </dl>
-                    <a class="btn" href="news.html"><span>Read More</span></a>
+                    </dl> -->
+                    <?php
+                // Fetch latest news
+                $args = array(
+                    'post_type'      => 'news',
+                    'posts_per_page' => 6,
+                );
+                $news_query = new WP_Query($args);
+                if ($news_query->have_posts()) :
+                    echo '<dl>';
+                    while ($news_query->have_posts()) : $news_query->the_post(); 
+            ?>
+                <a href="<?php the_permalink()?>">
+                        <dt><?php echo get_the_date(); ?></dt>
+                        <dd><?php the_title(); ?></dd>
+                </a>
+            <?php 
+                endwhile;
+                echo '</dl>';
+                wp_reset_postdata();
+                else :
+                    echo '<p class="text-center">No news found.</p>';
+                endif;
+            ?>
+                    <a class="btn" href="<?php echo home_url(); ?>/news"><span>Read More</span></a>
                 </div>
             </section>
         </main>
