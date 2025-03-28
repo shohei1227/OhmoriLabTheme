@@ -41,6 +41,7 @@ li{
   filter: drop-shadow(1px 1px 10px #c0c0c0);
   position: absolute;
   top: 30%;
+  font-weight: bold;
 }
 .sec-subtitle{
     width: 100%;
@@ -93,7 +94,7 @@ li{
     display:flex;
     justify-content:space-between;
     position:relative;
-    z-index:10;
+    z-index:0;
     background-image: url(../img/topvisual.jpg);
     background-size: cover;
     background-position: center top;
@@ -211,7 +212,7 @@ About
     margin-top: 20px;
 }
 #about .about-img {
-    background-image: url(../img/about.jpg);
+    background-image: url(./img/logistics.jpg);
     position: relative;
 }
 #about .content {
@@ -321,7 +322,7 @@ News
     margin-top:20px;
 }
 #news .news-img{
-    background-image:url(../img/location.jpg);
+    background-image:url(./img/logistics.jpg);
     position: relative;
 }
 #news dl{
@@ -437,7 +438,7 @@ Magazine
     margin-top: 20px;
 }
 #publication .publication-img {
-    background-image: url(../img/publish.jpg);
+    background-image: url(./img/logistics.jpg);
     position: relative;
 }
 
@@ -453,7 +454,7 @@ Magazine
     margin-top: 20px;
 }
 #research .publication-img{
-    background-image: url(../img/publish.jpg);
+    background-image: url(./img/logistics.jpg);
     position: relative;
 }
 #research .member ul{
@@ -480,7 +481,7 @@ Magazine
     margin-top: 20px;
   }
   #location .location-img {
-    background-image: url(../img/location.jpg);
+    background-image: url(./img/logistics.jpg);
     position: relative;
   }
   #location .item-map {

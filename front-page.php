@@ -69,7 +69,7 @@
                 <div class="about-content wrapper">
                     <h3 class="item-title">大森峻一</h3>
                     <div class="content">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about4.jpg" alt="テキスト">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about4.jpg" alt="">
                         <div class="text">
                           <p>
                             IE(Industrial Engineering)やOR(Operations Research)をベースとしたロジスティクス、サプライチェーンマネジメント、サービスのオペレーションの研究に従事。企業との産学連携プロジェクトにも多数参画。海外の大学との共同研究・国際プロジェクト運営にも多数参画。早稲田大学理工学部経営システム工学科卒(’07)、同修士(’09)、博士課程修了、博士(工学)(’13：早稲田大学)
