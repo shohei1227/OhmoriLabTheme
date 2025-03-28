@@ -13,6 +13,4 @@
     <div class="ohmorilab__page flex-grow items-center justify-center mx-auto my-10 max-w-[1000px] w-4/5">
         <?php the_content(); ?>
     </div>
-    <!-- フッター -->
-    <?php get_footer(); ?>
 </div>
